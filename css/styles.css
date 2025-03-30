@@ -1,0 +1,137 @@
+
+span {
+    font-family: 'Tiny5', sans-serif;
+    font-size: 2rem;
+    
+}
+span:hover {
+
+}
+.num-1 {
+    color: blue;
+}
+.num-2 {
+    color: green;
+}
+.num-3 {
+    color: red;
+}
+.num-4 {
+    color: darkblue;
+}
+.num-5 {
+    color: maroon;
+}
+.num-6 {
+    color: teal;
+}
+.num-8 {
+    color: darkgray;
+}
+
+p,
+p span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.025rem;
+    margin: 0 auto;
+    width: 520px;
+}
+.flex .flex {
+    width: 510px;
+    gap: 0.25rem;
+    padding: 2px 0;
+    margin: 0;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.toggle-btn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.flag-toggle {
+    width: 64px;
+    padding: 1rem;
+    margin: 0.5rem;
+    image-rendering: pixelated;
+    position: absolute;
+}
+.toggle-true {
+    background-color: gray;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+    image-rendering: pixelated;
+    align-self: center;
+}
+.covered {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/covered.png');
+    image-rendering: pixelated;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+div.flex {
+    background-color: darkgray;
+    padding: 2px 5px;
+    cursor: crosshair;
+    
+}
+
+
+.covered:hover {
+    background-color: rgb(147, 146, 146);
+    background-image: url('../img/covered-hovered.png');
+}
+
+
+.safe {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.safe:hover {
+    background-color: rgb(153, 200, 215);
+
+}
+
+.apple {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/bomb.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    image-rendering: pixelated;
+    background-color: red;
+}
+
+@media screen and (max-width: 1340px) {
+    .flag-toggle {
+        left: 3rem;
+    }
+}
+
