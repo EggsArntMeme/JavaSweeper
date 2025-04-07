@@ -274,6 +274,12 @@ function renderBoxes() {
         score += Math.floor(1000000 / parseInt(time.reverse().join('')))
         time.reverse()
         document.querySelector('#score').innerHTML = score
+
+        testInterval = setInterval(() => {
+            
+            
+        }, 5000)
+
     }
     if (gameOver) {
     }
@@ -391,6 +397,9 @@ testInterval = setInterval(() => {
     }
     document.querySelector('.time').innerHTML = `${time[3]}${time[2]}:${time[1]}${time[0]}`
 }, 1000)
+
+
+
 
 
 // test = {
