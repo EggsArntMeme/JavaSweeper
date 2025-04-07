@@ -14,13 +14,6 @@ let score = 0
 let dim = [15,15];
 
 
-async function pushScore(score=0) {
-    await fetch('../data/score.json', {
-        method: 'POST',
-        body: JSON.stringify({test: score})
-    })
-}
-pushScore(100)
 
 
 function getRandomInt(max) {
@@ -378,9 +371,9 @@ function winCheck() {
 
 
 // TIMER / CLOCK
-time = [0, 0, 0, 0]
+let time = [0, 0, 0, 0]
 
-testInterval = setInterval(() => {
+let testInterval = setInterval(() => {
     time[0] += 1    
     if (typeof(time) == 'object' && time[0] == 10) {
         time[0] = 0
@@ -398,9 +391,12 @@ testInterval = setInterval(() => {
         }
     }
     document.querySelector('.time').innerHTML = `${time[3]}${time[2]}:${time[1]}${time[0]}`
+    
+    
     getScore().then( (posts) => {
         console.log(posts)
     })
+    
 }, 1000)
 
 
