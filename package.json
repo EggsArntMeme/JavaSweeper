@@ -2,9 +2,10 @@
   "name": "javasweeper",
   "version": "1.0.0",
   "description": "the repository for JavaSweeper, Minesweeper written entirely within JavaScript and makes a browser base Minesweeper!",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/EggsArntMeme/JavaSweeper/issues"
   },
-  "homepage": "https://github.com/EggsArntMeme/JavaSweeper#readme"
+  "homepage": "https://github.com/EggsArntMeme/JavaSweeper#readme",
+  "dependencies": {
+    "parcel": "^2.14.4"
+  }
 }
