@@ -1,6 +1,6 @@
 
 function getScore() {
-    const BASE_URL = 'https://java-sweeper.netlify.app/data/score.json';
+    const BASE_URL = './data/score.json';
     return fetch(`${BASE_URL}`)   
         .then((response) => { 
             console.log(response)
