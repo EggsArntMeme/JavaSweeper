@@ -396,7 +396,7 @@ let testInterval = setInterval(() => {
     getScore().then( (posts) => {
         console.log(posts)
     })
-    
+
 }, 1000)
 
 

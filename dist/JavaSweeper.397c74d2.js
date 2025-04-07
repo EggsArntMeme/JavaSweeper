@@ -937,13 +937,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getScore", ()=>getScore);
 function getScore() {
-    const BASE_URL = 'https://java-sweeper.netlify.app/data/score.json';
-    const TEST_URL = 'http://localhost:3000/';
-    return fetch(`${BASE_URL}`).then((response)=>{
-        console.log(response);
+    const BASE_URL = 'http://localhost:3000';
+    return fetch(`${BASE_URL}/posts`).then((response)=>{
         return response.json();
     }).then((postData)=>{
-        console.log(postData);
         return postData;
     });
 }
