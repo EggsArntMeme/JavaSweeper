@@ -393,9 +393,7 @@ let testInterval = setInterval(() => {
     document.querySelector('.time').innerHTML = `${time[3]}${time[2]}:${time[1]}${time[0]}`
     
     
-    getScore().then( (posts) => {
-        console.log(posts)
-    })
+    getScore()
 
 }, 1000)
 

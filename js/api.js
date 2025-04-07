@@ -6,6 +6,7 @@ async function getScore() {
             return response.json();
         })
         .then ((postData) => {
+            console.log('postData')
             return postData
         })
 }
