@@ -1,5 +1,7 @@
 // import fs from 'fs'
 // fs.writeFileSync('my-data.json', json_string, 'utf8')
+import { getScore } from "./api";
+
 
 const body = document.querySelector('.flex');
 
@@ -396,6 +398,9 @@ testInterval = setInterval(() => {
         }
     }
     document.querySelector('.time').innerHTML = `${time[3]}${time[2]}:${time[1]}${time[0]}`
+    getScore().then( (posts) => {
+        console.log(posts)
+    })
 }, 1000)
 
 
