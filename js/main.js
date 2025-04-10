@@ -6,19 +6,19 @@
 const body = document.querySelector('.flex');
 
 let gameOver = false
-let mobileView = false
+let mobileView = true
 
 let numOfTotalBombs = 40
 let score = 0
 
 let dim = [];
 if (window.innerWidth <= 390) {
-    mobileView = true
     dim = [10,9];
 
 } else if (window.innerWidth <= 420) {
     dim = [10, 7]
-}else {
+} else {
+    mobileView = false
     dim = [15,15];
 }
 
