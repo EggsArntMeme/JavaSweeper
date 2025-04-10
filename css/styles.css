@@ -170,7 +170,7 @@ input[type='submit']:hover {
     .flag-toggle {
         position: absolute;
         left: 35%;
-        bottom: 25%;
+        bottom: 10%;
     } 
     .flex {
 
