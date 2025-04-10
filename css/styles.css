@@ -160,3 +160,29 @@ input[type='submit']:hover {
     }
 }
 
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .flag-toggle {
+        position: absolute;
+        left: 35%;
+        bottom: 25%;
+    } 
+    .flex {
+
+        gap: 0.025rem;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .flex .flex {
+        width: 90%;
+        gap: 0.25rem;
+        padding: 2px 0;
+        margin: 0;
+    }
+}
+

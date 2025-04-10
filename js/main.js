@@ -1,17 +1,29 @@
 // import fs from 'fs'
 // fs.writeFileSync('my-data.json', json_string, 'utf8')
-import { getScore } from "./api";
+// import { getScore } from "./api";
 
 
 const body = document.querySelector('.flex');
 
 let gameOver = false
+let mobileView = false
 
-const numOfTotalBombs = 40
-let numberOfFlags = numOfTotalBombs
+let numOfTotalBombs = 40
 let score = 0
 
-let dim = [15,15];
+let dim = [];
+if (window.innerWidth <= 390) {
+    mobileView = true
+    dim = [9,9];
+} else {
+    dim = [15,15];
+}
+
+
+if (mobileView) {
+    numOfTotalBombs = 20
+}
+let numberOfFlags = numOfTotalBombs
 
 
 
@@ -392,8 +404,7 @@ let testInterval = setInterval(() => {
     }
     document.querySelector('.time').innerHTML = `${time[3]}${time[2]}:${time[1]}${time[0]}`
     
-    
-    getScore()
+
 
 }, 1000)
 
